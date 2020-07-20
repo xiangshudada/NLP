@@ -1,0 +1,54 @@
+@import './variables.scss';
+
+form {
+	height: $form_height;
+	margin-top: -1%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	div {
+		height: 27px;
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+
+		input {
+			padding: 1px;
+			font-style: italic;
+		}
+
+		#invalid_message {
+			display: none;
+			color: #f00;
+			font-size: 0.9em;
+		}
+	}
+
+	input,
+	button {
+		background-color: $tr_color;
+		color: $sd_color;
+		font-size: 1.2em;
+		outline: none;
+		border: 1px solid $sd_color;
+		border-radius: $border_radius;
+	}
+
+	button {
+		margin-left: 10px;
+		height: 30px;
+		padding: 5px;
+		font-weight: bold;
+		box-shadow: 2px 4px 4px $sd_color;
+		cursor: pointer;
+
+		&:active {
+			box-shadow: none;
+		}
+
+		&::-moz-focus-inner {
+			border: 0;
+		}
+	}
+}

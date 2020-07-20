@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>NLP Evaluation</title>
+	<!-- Google Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;1,200&display=swap">
+</head>
+<body>
+	<header>
+		<h1>Evaluate text using NLP</h1>
+		<p>Enter a URL and see what Aylien has to say about it.</p>
+	</header>
+	<form>
+		<div>
+			<input id="user_url" type="text" placeholder="http://www.something.com">
+			<p id="invalid_message">Invalid URL</p>
+		</div>
+		<button onclick="return Client.handleSubmit(event)">Evaluate My Text!</button>
+	</form>
+	<section>
+		<div class="nlp-results">
+			<p>Polarity: <span></span></p>
+			<p>Polarity Confidence: <span></span></p>
+			<p>Subjectivity: <span></span></p>
+			<p>Subjectivity Confidence: <span></span></p>
+		</div>
+	</section>
+	<hr>
+	<footer>
+		<h3>Udacity Project</h3>
+	</footer>
+	<!-- Service Workers -->
+	<script>
+		if ('serviceWorker' in navigator) {
+        	window.addEventListener('load', () => {
+        	navigator.serviceWorker.register('/service-worker.js');
+        });
+    }
+	</script>
+</body>
+</html>

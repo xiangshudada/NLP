@@ -1,0 +1,19 @@
+@import './variables.scss';
+
+footer {
+	height: $footer_height;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	h3 {
+		font-size: 2em;
+	}
+
+	p {
+		font-size: 1em;
+		font-weight: 300;
+		font-style: italic;
+	}
+}

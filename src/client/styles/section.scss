@@ -1,0 +1,31 @@
+@import './variables.scss';
+
+section {
+	height: $section_height;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	.nlp-results {
+		margin-top: -5%;
+		height: 80%;
+		width: 40%;
+		border: 2px dashed $sd_color;
+		border-radius: $border_radius;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+
+		p {
+			margin-left: 10px;
+			color: $sd_color;
+			font-size: 1.4em;
+			font-weight: bolder;
+
+			span {
+				font-size: 1em;
+				font-weight: 500;
+			}
+		}
+	}
+}
