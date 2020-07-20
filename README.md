@@ -16,8 +16,6 @@ returns the results of the Natural Language Processing.
 
 The web tool can be accessed at localhost:3000
 
-![web tool running](img/web_tool.png)
-
 ## Test
 
 `$ npm test`
